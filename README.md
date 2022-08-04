@@ -2,6 +2,7 @@
 Separating multi- environment with firebase
 
 commands
+- flutter run apk --flavor staging
 - flutter build apk --flavor staging
 - flutter build apk --flavor production
 - flutter build apk --split-per-abi --flavor staging
