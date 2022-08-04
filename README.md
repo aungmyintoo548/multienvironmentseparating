@@ -24,11 +24,11 @@ Android
    Download google-services.json 
 
 
-android
-    -- app
-        -- src
-            -- production
-                -- google-services.json
-            -- staging
-                -- google-services.json
+android <br>
+    -- app<br>
+        -- src<br>
+            -- production<br>
+                -- google-services.json<br>
+            -- staging<br>
+                -- google-services.json<br>
 
