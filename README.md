@@ -25,8 +25,8 @@ Android
 
 
 android <br>
-<\t>    -- app<br>
-<\t>        -- src<br>
+    -- app<br>
+        -- src<br>
             -- production<br>
                 -- google-services.json<br>
             -- staging<br>
