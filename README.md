@@ -2,7 +2,8 @@
 Separating multi- environment with firebase
 
 commands
-- flutter run apk --flavor staging
+- flutter run --flavor staging
+- flutter run --flavor production
 - flutter build apk --flavor staging
 - flutter build apk --flavor production
 - flutter build apk --split-per-abi --flavor staging
@@ -13,3 +14,21 @@ commands
 Separating 
 - [Lab: separating multi environment medium](https://medium.com/@matt.goodson.business/separating-build-environment-configurations-in-flutter-with-firebase-doing-it-the-right-way-c72c3ad3621f)
      
+Android 
+========
+
+1. Go to android/app/src/ 
+   Create two Folder "production and staging"
+
+2. Go to firebase console and also create 2 project for staging and production.
+   Download google-services.json 
+
+
+android
+    -- app
+        -- src
+            -- production
+                -- google-services.json
+            -- staging
+                -- google-services.json
+
