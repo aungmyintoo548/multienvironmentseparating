@@ -15,7 +15,7 @@ Separating
 - [Lab: separating multi environment medium](https://medium.com/@matt.goodson.business/separating-build-environment-configurations-in-flutter-with-firebase-doing-it-the-right-way-c72c3ad3621f)
      
 Android 
-========
+---------
 
 1. Go to android/app/src/ 
    Create two Folder "production and staging"
