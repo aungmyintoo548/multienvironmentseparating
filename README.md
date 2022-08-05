@@ -119,7 +119,7 @@ class MainActivity: FlutterActivity() {
 
 <img src="assets/2.png">
 
-8. Output result is here.
+8. Output result is here.:relaxed:
 
 
 <img src="assets/3.jpg" width="200px">  |  <img src="assets/4.jpg" width="200px">
