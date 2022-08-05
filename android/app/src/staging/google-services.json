@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "834714025444",
+    "project_id": "authandmultienvironmenttest2",
+    "storage_bucket": "authandmultienvironmenttest2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834714025444:android:e1f94da476452be8f09bf1",
+        "android_client_info": {
+          "package_name": "com.amo.authtest.stg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834714025444-3bbgekhj3s871s550o07jsdtunvdlvta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaCectEVwPfBw9OEIPjjgXg40ZBaAcetg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834714025444-3bbgekhj3s871s550o07jsdtunvdlvta.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "834714025444-klhejpqrvm4aivguc71qd7o4m0gt0q3i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.amo.authtest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
