@@ -118,3 +118,12 @@ class MainActivity: FlutterActivity() {
 7. You can select run state (stating or production)
 
 <img src="assets/2.png">
+
+8. Output result is here.
+<div width="50%">
+<img src="assets/3.png">
+</div>
+<div width="50%">
+<img src="assets/4.png">
+</div>
+
