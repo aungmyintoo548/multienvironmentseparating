@@ -52,4 +52,69 @@ Future<void> getMethodChannel() {
 }
 ```
 
+4. android/app/build.gradle -> inner android { }
 
+```
+flavorDimensions "app"
+    productFlavors {
+
+        staging {
+            applicationId "Your AppId"   // eg. com.example.staging
+            dimension "app"
+        }
+
+        production {
+            applicationId "Your AppId"   // eg. com.example.production
+            dimension "app"
+        }
+    }
+```
+5. android/app/src/main/kotlin/MainActivity.kt
+
+```
+import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.engine.FlutterEngine
+import io.flutter.plugin.common.MethodChannel
+import androidx.annotation.NonNull
+
+class MainActivity: FlutterActivity() {
+    private val CHANNEL = "flavor"
+
+    override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
+        super.configureFlutterEngine(flutterEngine)
+        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL).setMethodCallHandler {
+            call, result ->
+            if (call.method.equals("getFlavor")) {
+                result.success(BuildConfig.FLAVOR);
+            }
+        }
+    }
+}
+```
+
+6. For VScode,change launch.json
+
+```
+{
+            "name": "staging",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--flavor",
+                "staging",
+            ]
+        },
+        {
+            "name": "production",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--flavor",
+                "production",
+            ]
+        },
+```
+
+7. You can select run state (stating or production)
+
+<img src="assets/2.png">
