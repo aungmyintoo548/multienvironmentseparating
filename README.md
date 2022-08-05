@@ -121,10 +121,6 @@ class MainActivity: FlutterActivity() {
 
 8. Output result is here.
 
-<div width="50%" float="left">
-<img src="assets/3.jpg" width="200px">
-</div>
-<div width="50%">
-<img src="assets/4.jpg" width="200px">
-</div>
+
+![]<img src="assets/3.jpg" width="200px">  |  ![]<img src="assets/3.jpg" width="200px">
 
