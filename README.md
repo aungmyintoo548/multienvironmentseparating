@@ -122,5 +122,5 @@ class MainActivity: FlutterActivity() {
 8. Output result is here.
 
 
-![]<img src="assets/3.jpg" width="200px">  |  ![]<img src="assets/3.jpg" width="200px">
+<img src="assets/3.jpg" width="200px">  |  <img src="assets/4.jpg" width="200px">
 
