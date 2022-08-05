@@ -120,10 +120,11 @@ class MainActivity: FlutterActivity() {
 <img src="assets/2.png">
 
 8. Output result is here.
-<div width="50%">
-<img src="assets/3.png">
+
+<div width="50%" float="left">
+<img src="assets/3.jpg" width="200px">
 </div>
 <div width="50%">
-<img src="assets/4.png">
+<img src="assets/4.jpg" width="200px">
 </div>
 
