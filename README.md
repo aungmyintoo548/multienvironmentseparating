@@ -26,3 +26,30 @@ Android
 
 <img src="assets/1.png">
 
+3. In main.dart , call Method flavor
+
+```
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await getMethodChannel();  // call in main
+  runApp(const MyApp());
+}
+
+Future<void> getMethodChannel() {
+  return const MethodChannel('flavor')
+      .invokeMethod<String>('getFlavor')
+      .then((String? flavor) {
+    print('STARTED WITH FLAVOR $flavor');
+    if (flavor == 'production') {
+      // add code for production
+    } else if (flavor == 'staging') {
+      // add code for staging
+    }
+  }).catchError((error) {
+    print(error);
+    print('FAILED TO LOAD FLAVOR');
+  });
+}
+```
+
+
